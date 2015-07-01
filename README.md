@@ -1,6 +1,6 @@
 # Minecraft Forge
 
-[![](https://badge.imagelayers.io/webhippie/minecraft-forge:latest.svg)](https://imagelayers.io/?images=webhippie/minecraft-forge:latest 'Get your own badge on imagelayers.io')
+[![](https://badge.imagelayers.io/webhippie/minecraft-forge:11.14.2.svg)](https://imagelayers.io/?images=webhippie/minecraft-forge:11.14.2 'Get your own badge on imagelayers.io')
 
 These are docker images for [Minecraft Forge](http://www.minecraftforge.net) running on an
 [Vanilla Minecraft](https://registry.hub.docker.com/u/webhippie/minecraft-vanilla/).
@@ -14,7 +14,7 @@ docker run --name minecraft-data busybox true
 docker run -d -p 25565:25565 \
   --volumes-from minecraft-data \
   --name minecraft \
-  webhippie/minecraft-forge:latest
+  webhippie/minecraft-forge:11.14.2
 
 # Execute this for further available commands
 docker exec -ti minecraft manage help
