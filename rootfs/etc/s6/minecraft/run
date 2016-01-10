@@ -27,5 +27,6 @@ then
   STARTCMD="${STARTCMD} -Xms${SERVER_MINHEAP}"
 fi
 
-cd /minecraft
-exec ${STARTCMD} ${JAVA_OPTS} -jar /minecraft/${FORGE_JAR} ${SERVER_OPTS}
+cd /minecraft 
+
+connector ${STARTCMD} ${JAVA_OPTS} -jar /minecraft/${FORGE_JAR} ${SERVER_OPTS} > output

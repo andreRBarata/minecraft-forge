@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# Usage: manage console
+# Summary: Start interactive console
+# Help: This command is used to start an interactive console on the minecraft server.
+
+telnet localhost 5000
